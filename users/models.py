@@ -17,6 +17,10 @@ class User(AbstractUser):
     
     def __str__(self):
         return self.email
+    
+    @property
+    def name(self):
+        return f"{self.first_name} {self.last_name}".strip()
 
 class TeacherRequest(models.Model):
     STATUS_CHOICES = [

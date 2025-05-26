@@ -9,15 +9,13 @@ class Class(models.Model):
     ]
     
     title = models.CharField(max_length=255)
-    description = models.TextField()
     teacher = models.ForeignKey(User, on_delete=models.CASCADE, related_name='classes_taught')
     price = models.DecimalField(max_digits=10, decimal_places=2)
-    seats = models.PositiveIntegerField()
+    short_description = models.TextField()
     total_enrolment = models.PositiveIntegerField(default=0)
-    status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='pending')
+    image = models.URLField(max_length=500, blank=True)  # For storing image URLs
+    status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='approved')
     created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
-    assignments_count = models.PositiveIntegerField(default=0)
     
     def __str__(self):
         return self.title
@@ -30,14 +28,13 @@ class MyClass(models.Model):
     ]
     
     title = models.CharField(max_length=255)
-    description = models.TextField()
     teacher = models.ForeignKey(User, on_delete=models.CASCADE, related_name='my_classes')
     price = models.DecimalField(max_digits=10, decimal_places=2)
-    seats = models.PositiveIntegerField()
+    short_description = models.TextField()
     total_enrolment = models.PositiveIntegerField(default=0)
-    status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='pending')
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
+    image = models.URLField(max_length=500, blank=True)  # For storing image URLs
+    status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='approved')
+    created_at = models.DateTimeField(auto_now_add=True,null=True)
     
     def __str__(self):
         return self.title

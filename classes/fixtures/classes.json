@@ -1,0 +1,262 @@
+[
+  {
+    "model": "classes.class",
+    "fields": {
+      "title": "UI/UX Design Fundamentals",
+      "teacher": 1,
+      "price": 69,
+      "short_description": "Design user-centered interfaces with Figma and XD.",
+      "total_enrolment": 210,
+      "image": "https://images.pexels.com/photos/4348404/pexels-photo-4348404.jpeg",
+      "status": "approved",
+      "created_at": "2024-01-01T12:00:00Z"
+    }
+  },
+  {
+    "model": "classes.class",
+    "fields": {
+      "title": "Freelancing Fundamentals",
+      "teacher": 1,
+      "price": 44,
+      "short_description": "Build a freelancing career from zero to success.",
+      "total_enrolment": 106,
+      "image": "https://images.pexels.com/photos/4348401/pexels-photo-4348401.jpeg",
+      "status": "approved",
+      "created_at": "2024-01-01T12:00:00Z"
+    }
+  },
+  {
+    "model": "classes.class",
+    "fields": {
+      "title": "Basic Spanish for Travelers",
+      "teacher": 1,
+      "price": 24.99,
+      "short_description": "Speak essential Spanish during your travels.",
+      "total_enrolment": 94,
+      "image": "https://images.pexels.com/photos/1115128/pexels-photo-1115128.jpeg",
+      "status": "approved",
+      "created_at": "2024-01-01T12:00:00Z"
+    }
+  },
+  {
+    "model": "classes.class",
+    "fields": {
+      "title": "Full-Stack Web Development",
+      "teacher": 1,
+      "price": 89,
+      "short_description": "Master frontend and backend web development.",
+      "total_enrolment": 248,
+      "image": "https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg",
+      "status": "approved",
+      "created_at": "2024-01-01T12:00:00Z"
+    }
+  },
+  {
+    "model": "classes.class",
+    "fields": {
+      "title": "Digital Marketing Mastery",
+      "teacher": 1,
+      "price": 59,
+      "short_description": "Understand SEO, content marketing, and PPC strategies.",
+      "total_enrolment": 222,
+      "image": "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg",
+      "status": "approved",
+      "created_at": "2024-01-01T12:00:00Z"
+    }
+  },
+  {
+    "model": "classes.class",
+    "fields": {
+      "title": "Watercolor Painting Basics",
+      "teacher": 1,
+      "price": 25,
+      "short_description": "Learn foundational watercolor painting techniques.",
+      "total_enrolment": 58,
+      "image": "https://images.pexels.com/photos/279321/pexels-photo-279321.jpeg",
+      "status": "approved",
+      "created_at": "2024-01-01T12:00:00Z"
+    }
+  },
+  {
+    "model": "classes.class",
+    "fields": {
+      "title": "Fitness & Nutrition Bootcamp",
+      "teacher": 1,
+      "price": 39.99,
+      "short_description": "Improve your lifestyle with simple health routines.",
+      "total_enrolment": 84,
+      "image": "https://images.pexels.com/photos/414029/pexels-photo-414029.jpeg",
+      "status": "approved",
+      "created_at": "2024-01-01T12:00:00Z"
+    }
+  },
+  {
+    "model": "classes.class",
+    "fields": {
+      "title": "Machine Learning with Python",
+      "teacher": 1,
+      "price": 89.99,
+      "short_description": "Learn machine learning using Scikit-learn and pandas.",
+      "total_enrolment": 198,
+      "image": "https://images.pexels.com/photos/3861972/pexels-photo-3861972.jpeg",
+      "status": "approved",
+      "created_at": "2024-01-01T12:00:00Z"
+    }
+  },
+  {
+    "model": "classes.class",
+    "fields": {
+      "title": "Artificial Intelligence Explained",
+      "teacher": 1,
+      "price": 109,
+      "short_description": "Understand how AI works and where it's heading.",
+      "total_enrolment": 205,
+      "image": "https://images.pexels.com/photos/2381594/pexels-photo-2381594.jpeg",
+      "status": "approved",
+      "created_at": "2024-01-01T12:00:00Z"
+    }
+  },
+  {
+    "model": "classes.class",
+    "fields": {
+      "title": "Introduction to Graphic Design",
+      "teacher": 1,
+      "price": 49.99,
+      "short_description": "Learn the basics of graphic design using modern tools.",
+      "total_enrolment": 134,
+      "image": "https://images.pexels.com/photos/3584975/pexels-photo-3584975.jpeg",
+      "status": "approved",
+      "created_at": "2024-01-01T12:00:00Z"
+    }
+  },
+  {
+    "model": "classes.class",
+    "fields": {
+      "title": "Introduction to Java Programming",
+      "teacher": 1,
+      "price": 49,
+      "short_description": "Start building apps with Java from scratch.",
+      "total_enrolment": 123,
+      "image": "https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg",
+      "status": "approved",
+      "created_at": "2024-01-01T12:00:00Z"
+    }
+  },
+  {
+    "model": "classes.class",
+    "fields": {
+      "title": "Startup Entrepreneurship 101",
+      "teacher": 1,
+      "price": 69.99,
+      "short_description": "Launch your startup with confidence and strategy.",
+      "total_enrolment": 88,
+      "image": "https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg",
+      "status": "approved",
+      "created_at": "2024-01-01T12:00:00Z"
+    }
+  },
+  {
+    "model": "classes.class",
+    "fields": {
+      "title": "Ethical Hacking Bootcamp",
+      "teacher": 1,
+      "price": 119,
+      "short_description": "Learn penetration testing and cybersecurity basics.",
+      "total_enrolment": 143,
+      "image": "https://images.pexels.com/photos/5380668/pexels-photo-5380668.jpeg",
+      "status": "approved",
+      "created_at": "2024-01-01T12:00:00Z"
+    }
+  },
+  {
+    "model": "classes.class",
+    "fields": {
+      "title": "Mobile App Development",
+      "teacher": 1,
+      "price": 99,
+      "short_description": "Create iOS and Android apps using modern frameworks.",
+      "total_enrolment": 145,
+      "image": "https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg",
+      "status": "approved",
+      "created_at": "2024-01-01T12:00:00Z"
+    }
+  },
+  {
+    "model": "classes.class",
+    "fields": {
+      "title": "React for Beginners",
+      "teacher": 1,
+      "price": 59.99,
+      "short_description": "A practical intro to building web apps with React.",
+      "total_enrolment": 175,
+      "image": "https://images.pexels.com/photos/1181289/pexels-photo-1181289.jpeg",
+      "status": "approved",
+      "created_at": "2024-01-01T12:00:00Z"
+    }
+  },
+  {
+    "model": "classes.class",
+    "fields": {
+      "title": "Advanced Excel Techniques",
+      "teacher": 1,
+      "price": 39.99,
+      "short_description": "Boost your Excel skills for data analysis and reporting.",
+      "total_enrolment": 189,
+      "image": "https://images.pexels.com/photos/669619/pexels-photo-669619.jpeg",
+      "status": "approved",
+      "created_at": "2024-01-01T12:00:00Z"
+    }
+  },
+  {
+    "model": "classes.class",
+    "fields": {
+      "title": "Python for Data Science",
+      "teacher": 1,
+      "price": 79.99,
+      "short_description": "Explore data science with Python and real-world examples.",
+      "total_enrolment": 320,
+      "image": "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg",
+      "status": "approved",
+      "created_at": "2024-01-01T12:00:00Z"
+    }
+  },
+  {
+    "model": "classes.class",
+    "fields": {
+      "title": "Photography for Beginners",
+      "teacher": 1,
+      "price": 29.99,
+      "short_description": "A simple course to start your photography journey.",
+      "total_enrolment": 97,
+      "image": "https://images.pexels.com/photos/3062541/pexels-photo-3062541.jpeg",
+      "status": "approved",
+      "created_at": "2024-01-01T12:00:00Z"
+    }
+  },
+  {
+    "model": "classes.class",
+    "fields": {
+      "title": "Public Speaking Essentials",
+      "teacher": 1,
+      "price": 29.99,
+      "short_description": "Gain confidence and deliver speeches like a pro.",
+      "total_enrolment": 61,
+      "image": "https://images.pexels.com/photos/3184328/pexels-photo-3184328.jpeg",
+      "status": "approved",
+      "created_at": "2024-01-01T12:00:00Z"
+    }
+  },
+  {
+    "model": "classes.class",
+    "fields": {
+      "title": "Creative Writing Workshop",
+      "teacher": 1,
+      "price": 34.99,
+      "short_description": "Unlock your storytelling potential with engaging prompts.",
+      "total_enrolment": 72,
+      "image": "https://images.pexels.com/photos/261909/pexels-photo-261909.jpeg",
+      "status": "approved",
+      "created_at": "2024-01-01T12:00:00Z"
+    }
+  }
+]
