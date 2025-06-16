@@ -13,9 +13,10 @@ class Class(models.Model):
     price = models.DecimalField(max_digits=10, decimal_places=2)
     short_description = models.TextField()
     total_enrolment = models.PositiveIntegerField(default=0)
-    image = models.URLField(max_length=500, blank=True)  # For storing image URLs
+    image = models.URLField(max_length=500, blank=True)  
     status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='approved')
     created_at = models.DateTimeField(auto_now_add=True)
+    assignment_count = models.PositiveIntegerField(default=0)
     
     def __str__(self):
         return self.title
@@ -33,7 +34,7 @@ class MyClass(models.Model):
     short_description = models.TextField()
     total_enrolment = models.PositiveIntegerField(default=0)
     image = models.URLField(max_length=500, blank=True)  # For storing image URLs
-    status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='approved')
+    status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='pending')
     created_at = models.DateTimeField(auto_now_add=True,null=True)
     
     def __str__(self):

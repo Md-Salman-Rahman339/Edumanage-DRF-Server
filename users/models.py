@@ -10,6 +10,8 @@ class User(AbstractUser):
     
     role = models.CharField(max_length=10, choices=ROLE_CHOICES, default='student')
     email = models.EmailField(unique=True)
+    photo = models.URLField(blank=True, null=True)
+
     
   
     USERNAME_FIELD = 'email'
@@ -33,6 +35,9 @@ class TeacherRequest(models.Model):
     status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='pending')
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+    experience = models.CharField(max_length=100, blank=True, null=True)  # Added
+    title = models.CharField(max_length=100, blank=True, null=True)      # Added
+    category = models.CharField(max_length=100, blank=True, null=True)   # Added
     
     def __str__(self):
         return f"{self.user.email} - {self.status}"

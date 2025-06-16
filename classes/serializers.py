@@ -20,7 +20,7 @@ class MyClassSerializer(serializers.ModelSerializer):
 class CreateMyClassSerializer(serializers.ModelSerializer):
     class Meta:
         model = MyClass
-        fields = ['title', 'description', 'price', 'seats']
+        fields = ['title', 'short_description', 'price', 'image']
     
     def create(self, validated_data):
         request = self.context.get('request')

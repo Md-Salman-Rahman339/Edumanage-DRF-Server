@@ -40,6 +40,27 @@ class PendingClassListView(generics.ListAPIView):
     serializer_class = MyClassSerializer
     permission_classes = [permissions.IsAuthenticated, IsAdmin]
 
+# class ApproveClassView(generics.UpdateAPIView):
+#     queryset = MyClass.objects.all()
+#     serializer_class = MyClassSerializer
+#     permission_classes = [permissions.IsAuthenticated, IsAdmin]
+    
+#     def update(self, request, *args, **kwargs):
+#         instance = self.get_object()
+#         instance.status = 'approved'
+#         instance.save()
+        
+#         # Create a corresponding approved class
+#         Class.objects.create(
+#             title=instance.title,
+#             description=instance.short_description,
+#             teacher=instance.teacher,
+#             price=instance.price,
+#             status='approved'
+#         )
+        
+#         return Response({'status': 'Class approved'})
+
 class ApproveClassView(generics.UpdateAPIView):
     queryset = MyClass.objects.all()
     serializer_class = MyClassSerializer
@@ -50,14 +71,16 @@ class ApproveClassView(generics.UpdateAPIView):
         instance.status = 'approved'
         instance.save()
         
-        # Create a corresponding approved class
-        Class.objects.create(
-            title=instance.title,
-            description=instance.description,
+      
+        Class.objects.get_or_create(
             teacher=instance.teacher,
-            price=instance.price,
-            seats=instance.seats,
-            status='approved'
+            title=instance.title,
+            defaults={
+                'short_description': instance.short_description,
+                'price': instance.price,
+                'image': instance.image,
+                'status': 'approved'
+            }
         )
         
         return Response({'status': 'Class approved'})
@@ -72,3 +95,29 @@ class RejectClassView(generics.UpdateAPIView):
         instance.status = 'rejected'
         instance.save()
         return Response({'status': 'Class rejected'})
+    
+
+class ApprovedMyClassListView(generics.ListAPIView):
+    serializer_class = MyClassSerializer
+    permission_classes = [permissions.IsAuthenticated, IsTeacher]
+
+    def get_queryset(self):
+        return MyClass.objects.filter(teacher=self.request.user, status='approved')
+class MyClassDetailView(generics.RetrieveAPIView):
+    serializer_class = MyClassSerializer
+    permission_classes = [permissions.IsAuthenticated, IsTeacher]
+    
+    def get_queryset(self):
+        return MyClass.objects.filter(teacher=self.request.user, status='approved')
+    
+
+
+class MyApprovedClassListView(generics.ListAPIView):
+    serializer_class = MyClassSerializer  
+    permission_classes = [permissions.IsAuthenticated, IsTeacher]
+
+    def get_queryset(self):
+        return MyClass.objects.filter(
+            teacher=self.request.user, 
+            status='approved'
+        )
