@@ -4,8 +4,8 @@ services:
     env: python
     buildCommand: |
       pip install -r requirements.txt
-      python manage.py collectstatic --noinput
     startCommand: |
-      python manage.py makemigrations --noinput
+      python manage.py migrate users zero --noinput
       python manage.py migrate --noinput
-      python manage.py runserver 0.0.0.0:80
+      python manage.py collectstatic --noinput
+      gunicorn edumanage-drf-server.wsgi:application --bind 0.0.0.0:$PORT
