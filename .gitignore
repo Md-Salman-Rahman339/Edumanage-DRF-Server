@@ -1,17 +1,16 @@
 # Django
 
-*.pyc
-__pycache__/
+
 
 
 # Environment
-.env
 venv/
 
 # IDE
-.vscode/
 .idea/
 
 # Static files (if any)
 staticfiles/
 media/
+config.bat
+node_modules
